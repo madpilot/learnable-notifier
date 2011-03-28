@@ -49,11 +49,23 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<bundler>, [">= 0"])
+      s.add_runtime_dependency(%q<i18n>, [">= 0"])
+      s.add_runtime_dependency(%q<prowler>, ["~> 1.2"])
+      s.add_runtime_dependency(%q<feedzirra>, [">= 0"])
+      s.add_runtime_dependency(%q<clamp>, [">= 0"])
     else
       s.add_dependency(%q<bundler>, [">= 0"])
+      s.add_dependency(%q<i18n>, [">= 0"])
+      s.add_dependency(%q<prowler>, ["~> 1.2"])
+      s.add_dependency(%q<feedzirra>, [">= 0"])
+      s.add_dependency(%q<clamp>, [">= 0"])
     end
   else
     s.add_dependency(%q<bundler>, [">= 0"])
+    s.add_dependency(%q<i18n>, [">= 0"])
+    s.add_dependency(%q<prowler>, ["~> 1.2"])
+    s.add_dependency(%q<feedzirra>, [">= 0"])
+    s.add_dependency(%q<clamp>, [">= 0"])
   end
 end
 

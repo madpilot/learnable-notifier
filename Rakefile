@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rake'
+require 'bundler'
 
 begin
   require 'jeweler'
@@ -12,6 +13,7 @@ begin
     gem.authors = ["Myles Eftos"]
     gem.add_dependency "bundler", ">= 0"
     gem.executables = "learnable-notify"
+    gem.add_bundler_dependencies
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
