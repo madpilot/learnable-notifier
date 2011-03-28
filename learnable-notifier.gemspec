@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{learnable-notifier}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Myles Eftos"]
-  s.date = %q{2011-03-28}
+  s.date = %q{2011-03-29}
   s.default_executable = %q{learnable-notify}
   s.description = %q{A little application that check the Learnable RSS feed and posts new messages to prowl. Use it in a cronjob - tested on OSX and Linux.}
   s.email = %q{myles@madpilot.com.au}
@@ -25,7 +25,9 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
      "bin/learnable-notify",
+     "learnable-notifier.gemspec",
      "lib/command_line.rb",
      "lib/learnable-notifier.rb",
      "test/helper.rb",

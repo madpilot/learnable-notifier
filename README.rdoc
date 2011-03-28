@@ -1,6 +1,19 @@
 = learnable-notifier
 
-Description goes here.
+A little executable that will monitor a Learnable.com forum RSS feed, and send new messages to Prowl (http://www.prowlapp.com), allowing
+you to receive them on you iOS compatible phone.
+
+== Install
+
+  gem install learnable-notifier
+
+== Usage
+
+learnable-notifier --lesson [URL to lesson] --api-key [Prowl API key]
+
+DON'T include the ?type=rss at the end of the URL - it is added explicitly
+
+Throw it in a crontab.
 
 == Note on Patches/Pull Requests
  

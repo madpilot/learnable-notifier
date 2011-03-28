@@ -11,6 +11,7 @@ begin
     gem.homepage = "http://github.com/madpilot/learnable-notifier"
     gem.authors = ["Myles Eftos"]
     gem.add_dependency "bundler", ">= 0"
+    gem.executables = "learnable-notify"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
