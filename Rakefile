@@ -5,13 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "learnable-notifier"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A little application that check the Learnable RSS feed and posts new messages to prowl}
+    gem.description = %Q{A little application that check the Learnable RSS feed and posts new messages to prowl. Use it in a cronjob - tested on OSX and Linux.}
     gem.email = "myles@madpilot.com.au"
     gem.homepage = "http://github.com/madpilot/learnable-notifier"
     gem.authors = ["Myles Eftos"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "bundler", ">= 0"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
